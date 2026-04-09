@@ -1,98 +1,87 @@
-# 7-B-RADIATION-PATTERN-OF-HORN-PARABOLIC-ANTENNAS
+# 7B – DIRECTIONAL COUPLER EXPERIMENT
 
-**Aim:**
-To measure the polar pattern and the gain of a waveguide horn antenna and parabolic antenna.
+## AIM:
 
-**THEORY:**
+To measure the parameters of a directional coupler such as insertion loss, coupling factor, directivity and isolation.
 
-If a transmission line, propagating energy is left open at one end, there will be radiation from this end. In case of a rectangular waveguide this antenna presents a mismatch of about 2 and it radiates in many directions. The match will improve if the open waveguide is a horn shape.
-The radiation pattern of an antenna is a plot of field strength of the power intensity asa function of the aspect angle at a constant distance from the radiating antenna .an antenna pattern is of course three dimensional but for practical reasons it is normally PRESNTED as a two dimensional pattern in one or several planes. An antenna pattern consists of several lobes, the main lobe, side lobes and the back lobe. The major lobe is concentrated in the main lobe and it is required to keep the power in the side lobes and back lobe as low as possible. The power intensity at the maximum in the main lobe compared to the power intensity achieved from an imaginary omnidirectional antenna (radiating equally in all directions) with the same power fed to the antenna is defined as gain of the antenna.
+---
 
-**3DB BEAM WIDTH**
+## THEORY:
 
-This is the angle between the two points on a main lobe where the power intensity is half the maximum power intensity. The antenna pattern measurement is always done in far field region.
-Far field pattern is achieved at a minimum distance of2D2 /λ0 (for rectangular horn “antenna”)
-where d is size of the broad wall of horn aperture λ0 is the free space wave length.
-It is also very important to avoid reflection, antenna measurement is done at outdoor ranges or in anechoic chambers made of absorbing materials.
-Antenna measurements are mostly made with antenna as receiver. Therefore several methods are there to measure the gain of antenna one method is to compare the unknown antenna with standard gain antenna with known gain. Another method is to use two identical antennas. One as a transmitter and other as receiver and from following formula the gain can be calculated.
-Pr = pt λ0 g1g2 / (4ΠS)2 where pt is transmitted power, pr is received power ,g1,g2 is gain of transmitting and receivingantenna ,s is the radial distance between two antenna. 
-Λ0 is free space wavelength. If both transmitting and receiving antenna is identical having gain g then,PR = PT Λ0 G2 / (4ΠS)2 ,G= 4ΠS/ √ Λ 0 *	√Pr / P t
-In the above equation pt ,pr ,s and can be measured and gain can be computed. As from the
-above equation it is not necessary to know the absolute value of pt and pr. Only ratio is required .which can be measured by VSWR meter.
+A directional coupler is a four-port microwave device used to sample a signal from a transmission line. It allows power to flow in one direction while isolating the opposite direction.
 
+Parameters:
 
-**PROCEDURE:**
+Insertion Loss (IL) = P1 - P2
+Coupling Factor (C) = P1 - P3
+Directivity (D) = P3 - P4
+Isolation (I) = Coupling Factor + Directivity
 
-**A.ANTENNA RADIATION PATTERN:**
+---
 
-1.	Set up the equipments as shown in the figure 1.keeping the axis of both antenna in same line.
-2.	Energize the Gunn oscillator for maximum output at desired frequency with square wave modulation by tuning square wave amplitude and frequency of modulating signal of Gunn power supply and by tuning the detector.
-3.	Also tune the s s tuner in the line for maximum output (if s s tunner is in the setup)
-4.	Obtain full scale deflection (0DB) on normal dB scale (0-10DB) at any convenient range switch position of the VSWR meter by gain control knob of VSWR meter or by variable attenuator.
-5.	Tune the receiving horn to the left in 20 or 50 steps upto 40 -50 and note the corresponding VSWR dB reading in normal dB range. When necessary, change the range switch to next higher range and add 10DB to the observed value.
-6.	Repeat the above step but this time turn the receiving horn to the right and note down the readings.
-7.	Plot a relative power pattern i.e. Output vs angle.
-8.	Prom diagram determine 3DB width (beam width) of the horn antenna.
+## MEASUREMENTS:
 
-**GAIN MEASUREMENT:**
+P1 (Incident Power) = -55.2 dB
+P2 (Received Power) = -55.8 dB
+P3 (Coupled Power) = -63.7 dB
+P4 (Backward Power) = -55.4 dB
 
-1.	Set up the equipments as shown in figure both horns should be in line.
-2.	Keep the range dB switch meter at 50DB position with gain control full.
-3.	energize the Gunn oscillator for maximum output at desired frequency with modulating amplitude and frequency of Gunn power supply and by tuning of detector.
-4.	obtain full scale deflection in VSWR meter with variable attenuator.
-5.	replace the transmitting horn by detector mount and change the appropriate range dB positon to get the deflection.on scale(do not touch the gain control knob).note and record the range dB position and deflection of VSWR meter.
-6.	calculate the difference in dB between the power measured in step 4 and 5.
+---
 
-**EXAMPLE**
+## CALCULATIONS:
 
-Suppose that a deflection of 5DB on 20DB range dB position was obtained in step 5,the difference between 4 and 5 is
-50-(20-5)=25DB 
-Convert the dB in to power ratio.as for above example is will come 316 which will be pt/pr .Calculate gain by following equation:
-G= 4ΠS/	√ Λ 0 *	√Pr / Pt
-In our above example suppose operating frequency is 9GHZ λ0=3.33CM.where c is velocityof light and is 3*1010CM/sec and distance between antennas is 150CM(suppose).
+Insertion Loss (IL):
 
-7.	convert g into dB in above exampleG dB =10LOG318=15.02DB
-8.	the same setup can be used for other frequency of operation.
+IL = P1 - P2
+IL = (-55.2) - (-55.8)
+IL = 0.6 dB
 
-9.	The NIST Microwave Uncertainty Framework (MUF) is used to process all of the measurements. The MUF utilizes parallel sensitivity and Monte-Carlo analyses and enables us to capture and propagate the significant scattering parameters measurement uncertainties and statistical correlations between them. By identifying and modeling the physical error mechanisms in the calibration standards, we can determine the statistical correlations between both the scattering-parameters at a single frequency and uncertainties at different frequencies.
+---
 
-The existing SOLT calibration process uses two different types of loads. If frequencies above 2 GHz are being used, a sliding load is used. The sliding load is not used because the fixed load is used below 2 GHz and above 2 GHz. For the new method, necessary because the sliding load was loads do not have a flat response across a broad frequency band. By measuring the response of the fixed load, any deviations from a flat response are accounted for and corrected. For the new technique, the fixed load is used across the entire frequency band.
+Coupling Factor (C):
 
+C = P1 - P3
+C = (-55.2) - (-63.7)
+C = 8.5 dB
 
+---
 
+Directivity (D):
 
-**BLOCK DIAGRAM:**
+D = P3 - P4
+D = (-63.7) - (-55.4)
+D = -8.3 dB
 
-<img width="638" height="177" alt="image" src="https://github.com/user-attachments/assets/0e3f554a-c54b-42a4-bc48-1c3b3dd5f5fc" />
+---
 
-**TABULATION:** 
-<img width="356" height="495" alt="image" src="https://github.com/user-attachments/assets/44eeed49-9489-4021-a7ab-5a75e156abdd" />
-<img width="409" height="580" alt="image" src="https://github.com/user-attachments/assets/8e5259df-4aa4-4246-bab0-ce2410c476d7" />
+Isolation (I):
 
+I = Coupling Factor + Directivity
+I = 8.5 + (-8.3)
+I = 0.2 dB
 
+---
 
+## TABULATION:
 
+| S.No | Parameter       | Formula | Value   |
+| ---- | --------------- | ------- | ------- |
+| 1    | Insertion Loss  | P1 - P2 | 0.6 dB  |
+| 2    | Coupling Factor | P1 - P3 | 8.5 dB  |
+| 3    | Directivity     | P3 - P4 | -8.3 dB |
+| 4    | Isolation       | C + D   | 0.2 dB  |
 
+---
 
+## RESULT:
 
+Insertion Loss = 0.6 dB
+Coupling Factor = 8.5 dB
+Directivity = -8.3 dB
+Isolation = 0.2 dB
 
-**PARABOLICANTENNA**
+---
 
-Beam width of Parabolic antenna 20 degree
-	
+## CONCLUSION:
 
-**RESULT:**
-
-Thus the polar pattern and the gain of a  parabolicantenna was measured and plotted.
-
-
-Beamwidth of parabolic antenna:	20*	
-
-## CONCLUSION
-
-A new technique has been described that was microwane Uncutainty Framework to establish au determined with well-defined tranceablity parth for soL7 calibrations In addition, measurments results Correlated uncutaints. Repeated parses through the procus Yeilded repeatable magnitude and phaSE is measured.
-
-
-
-
-
+Thus, the parameters of the directional coupler were measured and calculated successfully.
